@@ -15,6 +15,7 @@ func Run_router() {
 	}))
 
 	app.Post("/login", webmy.Login)
+	app.Get("/login/user", webmy.GetUser)
 
 	app.Listen(":8080")
 }
